@@ -1,0 +1,60 @@
+ 
+ [
+      {
+        "id" : 1,
+        "name": "Wedding",
+        "image_url": "https://i.ibb.co/F4JJKXQ/w1.jpg",
+        "price": 5000,
+        "short_description": "Elegant wedding celebration in a beautiful venue.",
+        "wed_desc1" : "Wedding planners offer comprehensive planning services to help couples with every aspect of their wedding, from selecting a venue and creating a budget to coordinating vendors and managing timelines.",
+        "wed_desc2" : "Venue Selection: Some services specialize in helping couples find the perfect wedding venue that matches their vision and budget.",
+        "wed_desc3": "Photography and Videography: Wedding photographers and videographers capture the special moments of the day, creating lasting memories for couples to cherish.",
+        "details_img" : "https://madamplanners.in/wp-content/uploads/2020/06/AI07225.jpg",
+        "ques2" : "What Factors Impact Wedding Planner Fees?",
+        "ans2" : "As we mentioned above, the average price of a planner might hover around $2,000, but many factors impact how much a wedding planner costs—and there is a lot of variation. The factors that can impact the price of a wedding planner are the location of the wedding (transportation and lodging of the team, per-diems, etc.) and the scope of work for the wedding, explains Daniels. A lot of these are unknown until you actually get into the details of planning. Experience and expertise are also big factors but 20 to 25 percent of the budget is a good place to start, she says of determining a planner fee."
+
+      },
+      {
+        "id" : 2,
+        "name": "Birthday Party",
+        "image_url": "https://www.i-eventplanner.com/wp-content/uploads/2018/07/Birthday-Party-planner.jpg",
+        "price": 1000,
+        "short_description": "Fun-filled birthday party for all ages.",
+        "details_img" : "https://4.imimg.com/data4/AJ/LR/ANDROID-15068978/product-500x500.jpeg",
+        "web_desc1" : "Service Description",
+        "wed_desc2" : "We have a wide range of services including Event Planning ,Birthday Decoration Services, Party Planner and other similar services. Our  is recognized in the industry for offering  Event Planning . Our rendered services are broadly appreciated by our clients for featuring various attributes like reliability, promptness and cost effectiveness.",
+        "ques2" : "What Factors Impact Birthday Planner Fees?",
+        "ans2" : "Our service offerings include , Birthday Party Planner and other related services. We feel proud to introduce ourselves as the well-known service provider of  Birthday Decoration Services. The offered Event Planning  are executed by the most experienced and expert professionals of the trade. We offer these services at very affordable market rates."
+        
+      },
+      {
+        "id" : 3,
+        "name": "Anniversary",
+        "image_url": "https://i.ibb.co/F4JJKXQ/w1.jpg",
+        "price": 2000,
+        "short_description": "Romantic anniversary dinner in a cozy setting."
+      },
+      {
+        "id" : 4,
+        "name": "Engagement Party",
+        "image_url": "https://i.ibb.co/F4JJKXQ/w1.jpg",
+        "price": 1500,
+        "short_description": "Celebrate the love of the newly engaged couple."
+      },
+      {
+        "id" : 5,
+        "name": "Retirement Party",
+        "image_url": "https://i.ibb.co/F4JJKXQ/w1.jpg",
+        "price": 800,
+        "short_description": "A farewell party for a retiring colleague."
+      },
+      {
+        "id" : 6,
+        "name": "Baby Shower",
+        "image_url": "https://i.ibb.co/F4JJKXQ/w1.jpg",
+        "price": 750,
+        "short_description": "Welcoming a new baby with joy and gifts."
+      }
+    ]
+  
+  
