@@ -21,39 +21,61 @@
         "price": 1000,
         "short_description": "Fun-filled birthday party for all ages.",
         "details_img" : "https://4.imimg.com/data4/AJ/LR/ANDROID-15068978/product-500x500.jpeg",
-        "web_desc1" : "Service Description",
+        "wed_desc1" : "Birthday Service Description",
         "wed_desc2" : "We have a wide range of services including Event Planning ,Birthday Decoration Services, Party Planner and other similar services. Our  is recognized in the industry for offering  Event Planning . Our rendered services are broadly appreciated by our clients for featuring various attributes like reliability, promptness and cost effectiveness.",
         "ques2" : "What Factors Impact Birthday Planner Fees?",
         "ans2" : "Our service offerings include , Birthday Party Planner and other related services. We feel proud to introduce ourselves as the well-known service provider of  Birthday Decoration Services. The offered Event Planning  are executed by the most experienced and expert professionals of the trade. We offer these services at very affordable market rates."
         
       },
       {
-        "id" : 3,
-        "name": "Anniversary",
-        "image_url": "https://i.ibb.co/F4JJKXQ/w1.jpg",
-        "price": 2000,
-        "short_description": "Romantic anniversary dinner in a cozy setting."
-      },
-      {
         "id" : 4,
         "name": "Engagement Party",
-        "image_url": "https://i.ibb.co/F4JJKXQ/w1.jpg",
+        "image_url": "https://image.wedmegood.com/resized-nw/700X/wp-content/uploads/2018/09/PRJA9793.jpg",
         "price": 1500,
-        "short_description": "Celebrate the love of the newly engaged couple."
+        "short_description": "Celebrate the love of the newly engaged couple.",
+        "wed_desc2":"Decorate the venue with flowers, balloons, banners, and other decor items that match the theme or color scheme of the party.",
+        "wed_desc3":"Consider hiring a DJ, live band, or creating a playlist for background music. You may also plan games or activities to keep guests entertained.",
+        "details_img":"https://images.wedmegood.com/wp-content/uploads/2022/07/DSC08544.jpg"
+        
       },
+      {
+        "id" : 3,
+        "name": "Anniversary",
+        "image_url": "https://www.bambooevents.co.in/images/anniversary4.webp",
+        "price": 2000,
+        "short_description": "Romantic anniversary dinner in a cozy setting.",
+        "details_img" : "https://www.kentshillpark.com/wp-content/uploads/2022/02/anniversary-party-ideas.jpeg",
+"wed_desc1": "Here are our some common aspects of anniversary event services:",
+        "wed_desc2" : "Whether it's a small, intimate gathering or a large-scale celebration, anniversary event services aim to relieve the stress and responsibility of planning and executing an event, allowing clients to fully enjoy and celebrate their special occasion.",
+        "wed_desc3" : "Venue Selection: Event planners assist in selecting the most suitable venue for the anniversary celebration, taking into account factors like location, size, ambiance, and accessibility."
+
+      },
+      
       {
         "id" : 5,
         "name": "Retirement Party",
-        "image_url": "https://i.ibb.co/F4JJKXQ/w1.jpg",
+        "image_url": "https://www.usnews.com/dims4/USNEWS/fdb890c/2147483647/thumbnail/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F1d%2F7b%2F155c512b46038fe46fe83abd90f6%2Fgettyimages-943038216.jpg",
+
         "price": 800,
-        "short_description": "A farewell party for a retiring colleague."
+        "short_description": "A farewell party for a retiring colleague.",
+        "details_img": "https://cdn.greenvelope.com/blog/wp-content/uploads/retirement-invitation-card.jpg",
+        "wed_desc1": "Gifts and Presentation are matter. Coordinate a gift presentation for the retiree, which may include a retirement gift, a card, or a group contribution. Ensure someone is responsible for handling gifts.",
+
+        "wed_desc2":"Plan for speeches and toasts, where colleagues, friends, and family can express their appreciation and share anecdotes about the retiree."
+
+
       },
       {
         "id" : 6,
         "name": "Baby Shower",
-        "image_url": "https://i.ibb.co/F4JJKXQ/w1.jpg",
+        "image_url": "https://www.baby-chick.com/wp-content/uploads/2022/03/Female-friends-open-gift-boxes-with-a-pregnant-woman-at-a-baby-shower-1281042814_2125x1416-1024x683.jpeg",
+
         "price": 750,
-        "short_description": "Welcoming a new baby with joy and gifts."
+        "short_description": "Welcoming a new baby with joy and gifts.",
+        "details_img": "https://b6d9e0f0.flyingcdn.com/wp-content/uploads/AdobeStock_305314005-scaled.jpeg",
+        "wed_desc2": "Baby shower planners can help you select and provide party favors for guests as a token of appreciation.",
+"wed_desc1": "A baby shower event service provides assistance in planning, organizing, and executing a baby shower celebration for expectant parents.Here are some of the services typically offered by baby shower event planners or services:"
+
       }
     ]
   

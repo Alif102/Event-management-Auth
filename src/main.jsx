@@ -14,6 +14,8 @@ import Register from './FirbaseTest-Components/Register';
 import Login from './FirbaseTest-Components/Login';
 import AuthProvider from './Provider/AuthProvider';
 import Explore from './Pages/Explore';
+import Blogs from './Blogs/Blogs';
+import About from './FirbaseTest-Components/About';
 
 const router = createBrowserRouter([
   {
@@ -28,9 +30,18 @@ const router = createBrowserRouter([
 
       },
       {
+        path : '/about-us',
+        element: <About/>
+      },
+      {
         path: '/details/:id',
         element: <Explore></Explore>,
         loader : ()=> fetch('/ServiceData.json')
+    },
+    {
+      path: '/blogs',
+      element: <Blogs/>,
+      loader : () => fetch('/BlogsData.json')
     },
       {
         path : '/register',

@@ -1,0 +1,32 @@
+[
+    {
+        "id" : 1,
+        "image": "https://www.brides.com/thmb/4zXA3F2t9tRkPjRV1Lc4vf9DZk4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/re-2ab60dd5b00145819b66a911c52a68bd.jpg",
+
+        "title" : "10 Hot Wedding Cake Trends 2023",
+        "person" : "John Doe",
+        "date" : "August 8, 2023",
+        "desc" : "If you’re planning a wedding in 2023, you may be ready to finalize all the details of your reception. Once you have an incredible meal planned, it’s only appropriate to finish things off with an equally impressive wedding day cake"
+
+    },
+    {
+        "id" : 2,
+        "image": "https://www.brides.com/thmb/gNYXmcu15ZvkarNLHldQ5mjwgAI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/modern-bd50ec7e0e4844e4874ec9ebd43d7538.jpg",
+
+        "title" : "50+ Ideas for Your Bridal Bouquet",
+        "person" : "Steve Smith",
+        "date" : "June 8, 2023",
+        "desc" : "Sleek, sophisticated, and refined, a modern wedding is a beautiful affair to plan (or to attend). Contemporary designs and trends can be seen throughout the various elements of the event, like clean lines, fresh greenery, and pared-down décor."
+
+    },
+    {
+        "id" : 3,
+        "image": "https://cdn.christmaslightsetc.com/images/CategoryDetail/151254/wedding-string-lights.jpg",
+
+        "title" : "Decorations & Lighting",
+        "person" : "David Warner",
+        "date" : "March 4, 2023",
+        "desc" : "When it comes to picking the perfect bridal lighting for your modern wedding, you'll want to keep the characteristics of a modern wedding—sophisticated, refined—in mind when choosing the combination of flowers and colors for your bridal bouquet."
+
+    }
+]
