@@ -18,7 +18,8 @@ alt="img" className=" w-full opacity-90 " />
                     <div className=" container text-center mx-auto my-[10%]   md:space-y-5 absolute">
     
                     
-                    <p className=' text-xl md:ml-[330px] text-white font-bold w-1/2'>We are creative in every aspect of the event; planning, promotional and publicity as well as execution. By being creative, our events are more outstanding and will leave a great impact not just to us, but to our clients as well.
+                    <p className=' text-xl md:ml-[330px] text-white font-bold w-1/2'>
+                      We are creative in every aspect of the event; planning, promotional and publicity as well as execution. By being creative, our events are more outstanding and will leave a great impact not just to us, but to our clients as well.
                       
                     </p>
               </div> </div>

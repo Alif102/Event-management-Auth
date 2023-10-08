@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import UseAuth from "./Hooks/UseAuth";
 import SocialLogin from "./SocialLogin"
+import swal from "sweetalert";
 
 const Register = () => {
 
@@ -14,6 +15,18 @@ const Register = () => {
     const photo = (form.get('photo'));
     const password = (form.get('password'))
     console.log(name, email, photo, password)
+
+    // validation
+
+    if (password.length < 6) {
+      swal.sucess(
+        'Password should at least 6 charecters',
+        
+        
+      )
+      return
+      
+    }
 
     createUser(email,password)
     .then(res => console.log(res.user))

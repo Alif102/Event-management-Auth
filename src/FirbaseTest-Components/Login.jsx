@@ -6,7 +6,7 @@ import SocialLogin from "./SocialLogin"
 const Login = () => {
   const {signIn} = UseAuth();
 
-  const Login = (e)=>{
+  const HandleLogin = (e)=>{
     e.preventDefault()
     const form = new FormData(e.currentTarget)
     const email = (form.get('email'));
@@ -21,7 +21,7 @@ const Login = () => {
   return (
     <div >
       <h1 className="text-2xl text-center ">Please Login </h1>
-      <form onSubmit={Login}
+      <form onSubmit={HandleLogin}
        className="card-body md:w-3/4 lg:w-1/2 mx-auto ">
        
 
