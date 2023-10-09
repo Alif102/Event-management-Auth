@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import UseAuth from "./Hooks/UseAuth";
 import SocialLogin from "./SocialLogin"
-import swal from "sweetalert";
+import toast from "react-hot-toast";
+import { useState } from "react";
 
 const Register = () => {
+  const [registerError, setRegisterError] = useState('');
+  const [sucess, setSuccess] =useState('');
 
   const {createUser} = UseAuth();
 
@@ -16,21 +19,36 @@ const Register = () => {
     const password = (form.get('password'))
     console.log(name, email, photo, password)
 
-    // validation
+    
+// rester error
+    setRegisterError('');
+    setSuccess('');
 
+    // validation
     if (password.length < 6) {
-      swal.sucess(
-        'Password should at least 6 charecters',
-        
-        
-      )
-      return
+      setRegisterError("toast.error('six char')")
+      return;
       
     }
+    else if(!/[A-Z/0-9]/.test(password)){
+      setRegisterError('should have one upper case letter')
+      return;
+    }
+    
+    
+
+    
 
     createUser(email,password)
-    .then(res => console.log(res.user))
-    .catch(error => console.error(error))
+  
+    .then(res => {
+      console.log(res.user);
+      setSuccess('User Created Sucessfully')
+    })
+    .catch(error => {
+      console.error(error);
+      setRegisterError(error.message)
+    })
 
 
   }
@@ -83,6 +101,13 @@ const Register = () => {
             <SocialLogin/>
 
       </form>
+      {
+        registerError && <p className="text-red-700">{registerError}</p>
+      }
+      {
+        // sucess && <p className="text-green-600"> {sucess}</p>
+        sucess && toast({sucess})
+      }
     </div>
  
     </>

@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
  import UseAuth from "./Hooks/UseAuth"
 import SocialLogin from "./SocialLogin"
 
 
 const Login = () => {
   const {signIn} = UseAuth();
+  const location = useLocation();
+  const navigate = useNavigate();
+
 
   const HandleLogin = (e)=>{
     e.preventDefault()
@@ -14,7 +17,12 @@ const Login = () => {
     console.log(email, password)
 
     signIn(email,password)
-    .then(res=> console.log(res.user))
+    .then(res=> {
+      console.log(res.user)
+      navigate(location?.state ? location.state : '/')
+
+    })
+
     .catch(error => console.error(error))
   }
 

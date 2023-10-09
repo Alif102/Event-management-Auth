@@ -16,6 +16,7 @@ import AuthProvider from './Provider/AuthProvider';
 import Explore from './Pages/Explore';
 import Blogs from './Blogs/Blogs';
 import About from './FirbaseTest-Components/About';
+import PrivateRoute from './FirbaseTest-Components/PrivateRoute/PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -31,16 +32,23 @@ const router = createBrowserRouter([
       },
       {
         path : '/about-us',
-        element: <About/>
+        element: <PrivateRoute>
+          <About/>
+        </PrivateRoute>
       },
       {
         path: '/details/:id',
-        element: <Explore></Explore>,
+        element:
+        <PrivateRoute>
+      <Explore></Explore>
+        </PrivateRoute> ,
         loader : ()=> fetch('/ServiceData.json')
     },
     {
       path: '/blogs',
-      element: <Blogs/>,
+      element: <PrivateRoute>
+        <Blogs/>
+      </PrivateRoute>,
       loader : () => fetch('/BlogsData.json')
     },
       {
