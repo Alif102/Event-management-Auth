@@ -13,12 +13,15 @@ const Login = () => {
     e.preventDefault()
     const form = new FormData(e.currentTarget)
     const email = (form.get('email'));
+   
     const password = (form.get('password'))
     console.log(email, password)
 
     signIn(email,password)
     .then(res=> {
       console.log(res.user)
+      
+          
       navigate(location?.state ? location.state : '/')
 
     })
@@ -32,7 +35,7 @@ const Login = () => {
       <form onSubmit={HandleLogin}
        className="card-body md:w-3/4 lg:w-1/2 mx-auto ">
        
-
+       
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>

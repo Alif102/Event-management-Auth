@@ -1,14 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import UseAuth from "./Hooks/UseAuth";
 import SocialLogin from "./SocialLogin"
-import toast from "react-hot-toast";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 const Register = () => {
+  const navigate = useNavigate();
   const [registerError, setRegisterError] = useState('');
   const [sucess, setSuccess] =useState('');
 
-  const {createUser} = UseAuth();
+  const {createUser, handleUpdateProfile} = UseAuth();
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -25,13 +26,13 @@ const Register = () => {
     setSuccess('');
 
     // validation
-    if (password.length < 6) {
-      setRegisterError("toast.error('six char')")
-      return;
+    // if (password.length < 6) {
+    //   setRegisterError("toast.error('six char')")
+    //   return;
       
-    }
-    else if(!/[A-Z/0-9]/.test(password)){
-      setRegisterError('should have one upper case letter')
+    // }
+     if(!/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@#$%^&+=!])[A-Za-z\d@#$%^&+=!]{6,}$/.test(password)){
+      setRegisterError('Password should be minimum six characters, at least one letter and one special character')
       return;
     }
     
@@ -39,11 +40,22 @@ const Register = () => {
 
     
 
-    createUser(email,password)
+    createUser(email,password,name,photo)
   
+    // .then(res => {
+    //   console.log(res.user);
+    //   setSuccess('User Created Sucessfully')
+    // })
+
     .then(res => {
-      console.log(res.user);
-      setSuccess('User Created Sucessfully')
+      console.log(res.user)
+      handleUpdateProfile(name,photo)
+      .then(()=>{
+        setSuccess('user created sucessfully')
+        toast.success('User created successfully');
+        navigate('/')
+      })
+
     })
     .catch(error => {
       console.error(error);
@@ -59,6 +71,13 @@ const Register = () => {
     
     <div >
       <h1 className="text-2xl text-center ">Please Register </h1>
+      {
+        registerError && <p className="text-red-700">{registerError}</p>
+      }
+      {
+        // sucess && <p className="text-green-600"> {sucess}</p>
+        sucess && <h2 className="text-green-700 text-center text-2xl mt-3 mb-3">{sucess}</h2>
+      }
       <form onSubmit={handleRegister}
        className="card-body md:w-3/4 lg:w-1/2 mx-auto ">
 
@@ -69,12 +88,18 @@ const Register = () => {
           <input type="text" placeholder="Your name" name="name" className="input input-bordered" />
         </div>
 
-        <div className="form-control">
+        {/* <div className="form-control">
           <label className="label">
             <span className="label-text">Photo</span>
           </label>
           <input type="text" placeholder="photo" name="photo" className="input input-bordered" />
-        </div>
+        </div> */}
+        <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Image Url</span>
+                                </label>
+                                <input type="text" placeholder="image url" className="input input-bordered" name='photo' />
+                            </div>
 
 
         <div className="form-control">
@@ -96,18 +121,12 @@ const Register = () => {
         <div className="form-control mt-6">
           <button className="btn btn-primary">Register</button>
         </div>
-        <p>Already have an account ? <Link to='/login'> <button>Login</button></Link></p>
+        <p>Already have an account ? <Link to='/'> <button>Login</button></Link></p>
 
             <SocialLogin/>
 
       </form>
-      {
-        registerError && <p className="text-red-700">{registerError}</p>
-      }
-      {
-        // sucess && <p className="text-green-600"> {sucess}</p>
-        sucess && toast({sucess})
-      }
+     
     </div>
  
     </>

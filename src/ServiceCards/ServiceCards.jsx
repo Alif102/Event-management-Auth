@@ -15,7 +15,7 @@ const ServiceCards = ({serviceCards}) => {
 
       
 <h2 className="font-serif text-gray-500 mt-14 text-2xl " data-aos="fade-up">Our Services</h2>
-<h2 className="text-4xl w-[300px] md:w-[700px] font-sans"data-aos="fade-right">Welcome to PlanMyDay Event Agency!
+<h2 className="text-4xl w-[300px] md:w-[700px] font-sans"data-aos="fade-up">Welcome to PlanMyDay Event Agency!
 </h2>
 
 <p className="lg:w-[765px] w-[300px] font-serif text-gray-500">Event management services are professional services that help plan, organize, and execute various types of events, ranging from small gatherings to large-scale conferences and festivals.

@@ -14,8 +14,8 @@ const Contact = () => {
         <div className="flex flex-col justify-center items-center space-y-4 ">
 
       
-<h2 className="font-serif text-gray-500 mt-14 text-2xl" data-aos="fade-left">Contact Details</h2>
-<h2 className="text-4xl w-[300px] md:w-[700px] font-sans"data-aos="fade-right"> If you would like to know more about my work or process feel free to get in touch
+<h2 className="font-serif text-gray-500 mt-14 text-2xl" data-aos="fade-up">Contact Details</h2>
+<h2 className="text-4xl w-[300px] md:w-[700px] font-sans"data-aos="fade-up"> If you would like to know more about my work or process feel free to get in touch
 </h2>
 </div>
 

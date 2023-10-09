@@ -63,26 +63,57 @@ const Navbar = () => {
                         </>
                 } */}
 
-{
+{/* {
 
-user ?
+user &&
 <>
-<h2 className="text-red-600">{user.displayName}</h2>
+<h2 className="text-red-600">{user.email}</h2>
+<img src={user?.photoURL} alt={user.displayName} />
 
 <div className="w-10 rounded-full">
 
     <img src={user.photoURL} alt={user.displayName} />
   </div>
-   <button className="btn bg-black text-white" onClick={LogOut}>Sign Out</button>
+   <button className="btn bg-gray-600 text-white" onClick={LogOut}>Sign Out</button>
+}
 
 
-</>
  : 
 <div className="navbar-end">
-<Link to='/login'> <button className="btn"> Login </button></Link>
+<Link to='/login'> <button className="btn bg-gray-600 text-white"> Login </button></Link>
 </div>
 
-}
+</>
+
+ */}
+             <div className="navbar-end">
+
+{
+                        user?.email ? <div className="dropdown dropdown-end">
+                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                <div className="w-10 rounded-full">
+                                    <img src={user.photoURL} alt={user.displayName} />
+                                </div>
+                            </label>
+                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li>
+                                    <button className="btn btn-sm  btn-ghost">{user.displayName}</button>
+
+                                </li>
+                                <li>
+                                    <button className="btn btn-sm  btn-ghost"
+                                        onClick={LogOut}
+                                    >Logout</button>
+
+                                </li>
+                                </ul>
+                        </div>
+                            :
+                            <Link to='/login'>
+                                <button className="btn btn-sm  btn-ghost">Login</button>
+                            </Link>
+                    }
+                    </div>
 
  
   

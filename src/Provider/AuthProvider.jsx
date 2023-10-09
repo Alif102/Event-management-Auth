@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { createContext, useEffect, useState } from "react"
 import auth from "../Firebase/firebase.config";
-import {  signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signOut, signInWithEmailAndPassword } from "firebase/auth";
+import {  signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signOut, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 
 const googleProvider = new GoogleAuthProvider();
 
@@ -34,6 +34,11 @@ const AuthProvider = ({children}) => {
         setLoading(true)
         return signOut(auth);
     }
+    const handleUpdateProfile = (name, photo) => {
+        return updateProfile(auth.currentUser, {
+            displayName: name, photoURL: photo
+        })
+    }
 
     useEffect( ()=> {
         const unSubscribe =   onAuthStateChanged(auth, currentUser => {
@@ -54,7 +59,8 @@ const AuthProvider = ({children}) => {
         user,
         loading,
         signIn,
-        LogOut
+        LogOut,
+        handleUpdateProfile
     }
 
 

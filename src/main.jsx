@@ -17,11 +17,14 @@ import Explore from './Pages/Explore';
 import Blogs from './Blogs/Blogs';
 import About from './FirbaseTest-Components/About';
 import PrivateRoute from './FirbaseTest-Components/PrivateRoute/PrivateRoute';
+import ErrorPage from './Pages/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root/> ,
+    errorElement : <ErrorPage/>,
+
     children : [
       {
         path : '/',

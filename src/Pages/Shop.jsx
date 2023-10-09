@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 const Shop = () => {
   useEffect( ()=> {
-    Aos.init({duration: 3000});
+    Aos.init({duration: 3000}); 
   },[])
   return (
     <div>
