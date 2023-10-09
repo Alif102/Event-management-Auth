@@ -19,7 +19,7 @@ const Contact = () => {
 </h2>
 </div>
 
-<div className='grid max-w-[1000px] mx-auto md:grid-cols-4 mt-16 mb-9 gap-6' data-aos="fade-up">
+<div className='grid max-w-[1000px] mx-auto md:grid-cols-4 mt-16 mb-9 gap-6' >
     <div className='flex justify-center items-center flex-col space-y-7 text-center'>
     <h2 className='text-8xl  text-pink-600'><FaMobileAlt /></h2>
     <h2 className='text-3xl font-serif mb-9 mt-8'>Phone</h2>
