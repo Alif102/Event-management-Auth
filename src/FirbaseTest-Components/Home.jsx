@@ -5,7 +5,6 @@ import Shop from "../Pages/Shop"
 import Contact from "../Pages/Contact"
 import EventBanner from "./EventBanner"
 import Footer from "./Footer"
-import { Toaster } from "react-hot-toast"
 
 const Home = () => {
   const serviceCards = useLoaderData()
@@ -17,7 +16,7 @@ const Home = () => {
       <Shop/>
       <Contact/>
       <Footer/>
-      <Toaster/>
+      
 
       
     </div>

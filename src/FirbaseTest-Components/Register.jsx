@@ -26,13 +26,9 @@ const Register = () => {
     setSuccess('');
 
     // validation
-    // if (password.length < 6) {
-    //   setRegisterError("toast.error('six char')")
-    //   return;
-      
-    // }
+    
      if(!/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@#$%^&+=!])[A-Za-z\d@#$%^&+=!]{6,}$/.test(password)){
-      setRegisterError('Password should be minimum six characters, at least one letter and one special character')
+     toast.error('Password should be minimum six characters, at least one Capital letter and one special character')
       return;
     }
     
@@ -42,11 +38,7 @@ const Register = () => {
 
     createUser(email,password,name,photo)
   
-    // .then(res => {
-    //   console.log(res.user);
-    //   setSuccess('User Created Sucessfully')
-    // })
-
+    
     .then(res => {
       console.log(res.user)
       handleUpdateProfile(name,photo)
@@ -59,6 +51,7 @@ const Register = () => {
     })
     .catch(error => {
       console.error(error);
+      toast.error('User created Unsuccessfull. Something went wrong');
       setRegisterError(error.message)
     })
 
@@ -75,7 +68,6 @@ const Register = () => {
         registerError && <p className="text-red-700">{registerError}</p>
       }
       {
-        // sucess && <p className="text-green-600"> {sucess}</p>
         sucess && <h2 className="text-green-700 text-center text-2xl mt-3 mb-3">{sucess}</h2>
       }
       <form onSubmit={handleRegister}
@@ -88,12 +80,7 @@ const Register = () => {
           <input type="text" placeholder="Your name" name="name" className="input input-bordered" />
         </div>
 
-        {/* <div className="form-control">
-          <label className="label">
-            <span className="label-text">Photo</span>
-          </label>
-          <input type="text" placeholder="photo" name="photo" className="input input-bordered" />
-        </div> */}
+     
         <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Image Url</span>
@@ -121,7 +108,7 @@ const Register = () => {
         <div className="form-control mt-6">
           <button className="btn btn-primary">Register</button>
         </div>
-        <p>Already have an account ? <Link to='/'> <button>Login</button></Link></p>
+        <p>Already have an account ? <Link to='/login'> <button>Login</button></Link></p>
 
             <SocialLogin/>
 

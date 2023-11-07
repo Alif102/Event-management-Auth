@@ -17,6 +17,8 @@ const Login = () => {
     const password = (form.get('password'))
     console.log(email, password)
 
+   
+
     signIn(email,password)
     .then(res=> {
       console.log(res.user)
